@@ -28,7 +28,7 @@ public class Rating {
 	}
 
 	public void setRATING_ID(int RATING_ID) {
-		RATING_ID = RATING_ID;
+		this.RATING_ID = RATING_ID;
 	}
 
 	public String getRATING_NAME() {
@@ -36,7 +36,7 @@ public class Rating {
 	}
 
 	public void setRATING_NAME(String RATING_NAME) {
-		RATING_NAME = RATING_NAME;
+		this.RATING_NAME = RATING_NAME;
 	}
 
 	public int getPROJECTED_PROPORTION() {
@@ -44,7 +44,7 @@ public class Rating {
 	}
 
 	public void setPROJECTED_PROPORTION(int PROJECTED_PROPORTION) {
-		PROJECTED_PROPORTION = PROJECTED_PROPORTION;
+		this.PROJECTED_PROPORTION = PROJECTED_PROPORTION;
 	}
 
 	public double getSALARY_INCREASE_MIN() {
@@ -52,7 +52,7 @@ public class Rating {
 	}
 
 	public void setSALARY_INCREASE_MIN(double SALARY_INCREASE_MIN) {
-		SALARY_INCREASE_MIN = SALARY_INCREASE_MIN;
+		this.SALARY_INCREASE_MIN = SALARY_INCREASE_MIN;
 	}
 
 	public double getSALARY_INCREASE_MAX() {
@@ -60,6 +60,6 @@ public class Rating {
 	}
 
 	public void setSALARY_INCREASE_MAX(double SALARY_INCREASE_MAX) {
-		SALARY_INCREASE_MAX = SALARY_INCREASE_MAX;
+		this.SALARY_INCREASE_MAX = SALARY_INCREASE_MAX;
 	}
 }
