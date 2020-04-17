@@ -1,0 +1,65 @@
+package com.Web;
+
+public class Rating {
+	private int RATING_ID;
+	private String RATING_NAME;
+	private int PROJECTED_PROPORTION;
+	private double SALARY_INCREASE_MIN;
+	private double SALARY_INCREASE_MAX;
+
+	public Rating(
+		 int RATING_ID,
+		 String RATING_NAME,
+		 int PROJECTED_PROPORTION,
+		 double SALARY_INCREASE_MIN,
+		 double SALARY_INCREASE_MAX
+	)
+	{
+		this.RATING_ID= RATING_ID;
+		this.RATING_NAME =RATING_NAME;
+		this.PROJECTED_PROPORTION = PROJECTED_PROPORTION;
+		this.SALARY_INCREASE_MIN = SALARY_INCREASE_MIN;
+		this.SALARY_INCREASE_MAX = SALARY_INCREASE_MAX;
+
+	
+	}
+	public int getRATING_ID() {
+		return RATING_ID;
+	}
+
+	public void setRATING_ID(int RATING_ID) {
+		this.RATING_ID = RATING_ID;
+	}
+
+	public String getRATING_NAME() {
+		return RATING_NAME;
+	}
+
+	public void setRATING_NAME(String RATING_NAME) {
+		this.RATING_NAME = RATING_NAME;
+	}
+
+	public int getPROJECTED_PROPORTION() {
+		return PROJECTED_PROPORTION;
+	}
+
+	public void setPROJECTED_PROPORTION(int PROJECTED_PROPORTION) {
+		this.PROJECTED_PROPORTION = PROJECTED_PROPORTION;
+	}
+
+	public double getSALARY_INCREASE_MIN() {
+		return SALARY_INCREASE_MIN;
+	}
+
+	public void setSALARY_INCREASE_MIN(double SALARY_INCREASE_MIN) {
+		this.SALARY_INCREASE_MIN = SALARY_INCREASE_MIN;
+	}
+
+	public double getSALARY_INCREASE_MAX() {
+		return SALARY_INCREASE_MAX;
+	}
+
+	public void setSALARY_INCREASE_MAX(double SALARY_INCREASE_MAX) {
+		this.SALARY_INCREASE_MAX = SALARY_INCREASE_MAX;
+	}
+}
