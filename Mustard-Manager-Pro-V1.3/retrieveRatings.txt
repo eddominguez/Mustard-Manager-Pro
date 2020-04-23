@@ -11,7 +11,7 @@ public class retrieveRatings {
 			
 			temp = ID_List[i].toString(); 
 			
-			if (i==0){ //first pass doesn't include comma before it
+			if (i==0){ 
 				qryp2 = temp;
 			}
 			else {
