@@ -1,9 +1,5 @@
 package Project;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-
 public class retrieveRatings {
 	public String retrieve(int[] ID_List) {
 		String qry;
