@@ -1,0 +1,52 @@
+package Project;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class retrieveRatings {
+	public String retrieve(int[] ID_List) {
+		Connection con = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		try {
+			//get connection 
+			// con = DriverManager.getConnection()
+			//create and execute query
+			String sqlquery = "SELECT * FROM RATING";
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(sqlquery);
+			//display result
+			while (rs.next()) {
+				Integer ID = rs.getInt("RATING_ID");
+				String NAME = rs.getString("RATING_NAME");
+				Integer PROPORTION = rs.getInt("PROJECTED_PROPORTION");
+				Double SALARY_INCREASE_MIN = rs.getDouble("SALARY_INCREASE_MIN");
+				Double SALARY_INCREASE_MAX = rs.getDouble("SALARY_INCREASE_MAX");
+			}
+			//close resources
+			rs.close();
+			stmt.close();
+			con.close();
+		}
+		catch(Exception e) {
+			System.out.println("Error: " + e);
+			
+		}finally {
+			try {
+				if (stmt != null) {
+					stmt.close();
+				}
+				if (con != null) {
+					con.close();
+				}
+				if (rs != null) {
+					rs.close();
+				}
+			}catch (Exception e) {}
+		}
+			
+		return null;
+		
+	}
+}
